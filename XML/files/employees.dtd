@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT employees (employee)+>
+
+<!-- ELEMENTS WITH SUB ELEMENTS rule -->
+<!ELEMENT employee (id, firstname, lastname)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>

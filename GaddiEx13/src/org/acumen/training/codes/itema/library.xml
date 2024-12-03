@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE library SYSTEM "library.dtd">
+<library>
+	<book id="2003-Blanken">
+		<title>Intelligent XML Search</title>
+		<editor>Henk A. Blanken et al.</editor>
+		<publisher>Springer Verlag</publisher>
+	</book>
+	<journal id="TODS_1_2003" publ_year="2001">
+		<author>U. Known</author>
+		<title>ACM Transactions on Databases</title>
+		<volume>
+			24
+			<number>1</number>
+		</volume>
+	</journal>
+	<misc dip_Id="Dipl2002-12" tr_Id="TR2002-01-04">
+		<author>U. Known</author>
+		<title>The Diploma Thesis that didn’t appear</title>
+		<year>2002</year>
+		<pages>0</pages>
+	</misc>
+</library>

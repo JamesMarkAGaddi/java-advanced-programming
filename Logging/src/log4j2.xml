@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration name="SBCLogConfig">
+	<Appenders>
+		<Console name="CONSL" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{MMM dd, YYYY hh:mm:ss a} %C %M%n%p: %m%n" />
+		</Console>
+		<File name="FILE" fileName="./src/files/math2.log">
+			<PatternLayout
+				pattern="%d{MMM dd, YYYY hh:mm:ss a} %C %M%n%p: %m%n" />
+		</File>
+
+	</Appenders>
+	<Loggers>
+		<Logger name="LOGGER1" additivity="false" level="INFO">
+			<AppenderRef ref="FILE" />
+		</Logger>
+
+
+		<Root level="INFO"> <!-- this the rootlogger -->
+			<AppenderRef ref="CONSL" />
+		</Root>
+	</Loggers>
+
+</Configuration>

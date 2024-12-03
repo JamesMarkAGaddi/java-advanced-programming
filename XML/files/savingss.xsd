@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.sbc.com/savingss"
+	xmlns:tns="http://www.sbc.com/savingss" elementFormDefault="qualified"> <!-- means everything here will be final and irrevokeable -->
+
+	<xs:group name="important">
+		<xs:sequence>
+			<xs:element name="accountId" default="ZZZ000">
+
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="branch" type="xs:string"
+								use="optional" />
+							<xs:attribute name="scope" type="xs:string"
+								fixed="Quezon City" />
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="accountName">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<!-- > <xs:minLength value="2" /> <xs:maxLength value="20" /> --><!-- this is for range -->
+						<xs:length value="18" />
+						<xs:pattern value="[A-Z][a-zA-Z ]+" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+			<xs:element name="amount">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7" /> <!-- 7,3 - 7 digits, 3 are decimals -->
+						<xs:fractionDigits value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="age">
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="3" />
+						<xs:minInclusive value="90" />
+						<xs:maxExclusive value="999"></xs:maxExclusive>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dateOpened" type="xs:date" />
+		</xs:sequence>
+	</xs:group>
+
+	<xs:group name="optional">
+		<xs:sequence>
+			<!-- EMPTY TAG RULE -->
+			<xs:element name="company">
+				<xs:complexType>
+					<!-- <xs:anyAttribute /> <! kapag bawal sya lagyan ng attribute -->
+					<xs:attribute name="name" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="SBC" />
+								<xs:enumeration value="PNB" />
+								<xs:enumeration value="BPI" />
+								<xs:enumeration value="BDO" />
+								<xs:enumeration value="MBC" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="operations" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+
+			<!-- MIXED TAG RULES -->
+			<xs:element name="address">
+				<xs:complexType mixed="true">
+					<!-- SEQUENCE RULES (sequence, all, choice) -->
+					<xs:choice>
+						<xs:element name="street" type="xs:string"></xs:element>
+						<xs:element name="country" type="xs:string"></xs:element>
+					</xs:choice>
+					<xs:attribute name="zipcode" type="xs:integer" />
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="type">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="accountType" type="xs:string"
+							minOccurs="1" maxOccurs="unbounded" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+
+	<!-- SCHEMA RULES -->
+	<xs:element name="savingss">
+		<xs:complexType>
+			<xs:choice>
+				<xs:group ref="tns:important" />
+				<xs:group ref="tns:optional" minOccurs="0" maxOccurs="1" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+

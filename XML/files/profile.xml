@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- this is important to run an xml file -->
+<!-- not a well-formed(WF) document kasi may error pa sya kapag header lang -->
+<!-- XML is used define and store data in a shareable manner like DB, ORM, 
+	LOG4J2 -->
+<!-- tags here are user-defined, unlike HTML na pre-defined -->
+
+<!-- Step1: it should have a root tag, it should be the same as your file 
+	name. -->
+<profile gender="male">
+	<!-- Step2: root tag should have sub tags to make it a tree, sometimes called 
+		elements, tags, nodes -->
+	<!-- We also have text tags/elements, everything inside the tags -->
+	<!-- Step3: all tags should properly be nested, after the text close na 
+		agad -->
+	<!-- Nagmamatter ang whitespace so wag ka maglalagay dahil naOOC ka. -->
+	<!-- Step4: all elements are case-sensitive -->
+	<!-- If needed, apply/include attributes -->
+	<!-- "PRETTY PRINTED" -->
+	<!-- Types of Elemets: -->
+	<!-- 1. Simple elements - opening/closing tags and text nodes. Very easy 
+		to parse. -->
+	<!-- di pwede pangplural -->
+	<id>101</id>
+	<firstname nickname="Juanito 'Erap' Luna">Juan</firstname>
+	<lastname>Luna</lastname>
+	<age>68</age>
+	<salary>50000.00</salary>
+
+	<!-- 2. Complex elements - organizationally oriented tags -->
+	<!-- 2.a EMPTY or SINGLETON elements - no text tags -->
+	<company name="SBC" type="banking" /> <!-- CDATA, should be parsed or not? -->
+	<!-- dito ilalagay mga optional lang naman or di essential by nature -->
+	<!-- sa backend bihira lang to -->
+	<!-- kapag dagdag information sya ganun -->
+
+	<!-- 2.b ELEMENTS WITH SUB-ELEMENTS -->
+	<employers>
+		<employer xmlns="http://bigay-lang-url-dito-kaya-wag-ka-bibili-sa-godaddy.com/1">DOST</employer>
+		<employer xmlns="http://bigay-lang-url-dito-kaya-wag-ka-bibili-sa-godaddy.com/2">SBC</employer>
+	</employers>
+
+	<address zip="2015"> <!-- everything in the attributes is String -->
+		<unit>31</unit>
+		<street>Diligence</street>
+		<brgy>San Pablo Propio</brgy>
+	</address>
+
+	<!-- 2.c MIXED CONTENTS -->
+	<citizenship>
+		Approved
+		<code>2015</code>
+		<description>Philippines</description>
+	</citizenship>
+
+	<!-- 2.d SIMPLE ELEMENTS WITH ATTRIBUTES -->
+	<postion item="110" description="regular">JAVA DEVELOPER</postion>
+
+	<!-- predefined entities like the &lt; -->
+	<description>This employee is hardworker and earns &lt; 100000.0
+	</description>
+
+	<!-- PCDATA - PARSED CHARACTER DATA - parseable data -->
+	<!-- CDATA - CHARACTER DATA - not parseable data -->
+	
+	<![CDATA[
+		This is a cdata kaya di sya mapaprse kahit anong mngyari rito or ilagay k >><>?>?:?":"L><:>
+	]]>
+
+
+</profile>
+
+<!-- RULES and NAMING CONVENTIONS -->
+<!-- tag name should not start with a number -->
+<!-- tag name should not start with a special characters except underscore 
+	pero di sya best practice -->
+<!-- tag name should not start with xml, xsd, xsl, and other term used in 
+	xml syntax -->
+<!-- use tags that are database or model related -->
+<!-- text nodes of any tags should be UTF-8 meaning should be converted or 
+	translated universally -->
+
+<!-- BEST PRACTICES -->
+<!-- make your tag/attribute names short or concise -->
+<!-- avoid using semicolon in tag/attribute names -->
+<!-- avoid dashes in tag/attribute names because that is an xquery operation -->
+<!-- avoid using dot mukha syang JSP na class.method -->
+ 
+ 
+ 

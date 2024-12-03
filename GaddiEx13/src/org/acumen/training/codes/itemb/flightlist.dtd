@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT flightlist (flight+)>
+
+<!ELEMENT flight (passengers+)>
+<!ATTLIST flight 
+  number CDATA #REQUIRED
+  origin (BOS | SJU | SFO | JFK | DCA | MAD | NYC | MRY) #REQUIRED
+  dest (BOS | SJU | SFO | JFK | DCA | MAD | NYC | MRY) #REQUIRED>
+
+<!ELEMENT passengers (passenger+)>
+<!ATTLIST passengers 
+  date CDATA #REQUIRED>
+
+<!ELEMENT passenger EMPTY>
+<!ATTLIST passenger 
+  name CDATA #REQUIRED
+  seat CDATA #REQUIRED>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE flightlist SYSTEM "flightlist.dtd">
+<flightlist>
+	<flight number="1" origin="BOS" dest="SJU">
+		<passengers date="12-4-2012">
+			<passenger name="Laura" seat="1A" />
+			<passenger name="Anna" seat="1B" />
+		</passengers>
+		<passengers date="12-5-2012">
+			<passenger name="Tatiana" seat="1C" />
+			<passenger name="Candy" seat="1D" />
+		</passengers>
+	</flight>
+	<flight number="2" origin="SFO" dest="JFK">
+		<passengers date="12-4-2012">
+			<passenger name="Charlie" seat="1A" />
+			<passenger name="Ivan" seat="1B" />
+		</passengers>
+		<passengers date="12-5-2012">
+			<passenger name="Dan" seat="1C" />
+			<passenger name="Li" seat="1D" />
+		</passengers>
+	</flight>
+	<flight number="3" origin="NYC" dest="MRY">
+		<passengers date="12-5-2012">
+			<passenger name="Eva" seat="2A" />
+			<passenger name="Joshua" seat="2B" />
+		</passengers>
+		<passengers date="12-6-2012">
+			<passenger name="Crizzy" seat="2C" />
+			<passenger name="Lu" seat="2D" />
+		</passengers>
+	</flight>
+</flightlist>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE savings SYSTEM "savings.dtd">
+<savings>
+	<accountId scope="national">ABCD1234</accountId>
+	<accountName role="PRIMARY">JAMES LUNA</accountName>
+	<accountName role="SECONDARY" position="CEO">JUAN GADDI</accountName>
+	<amount>1234.5678</amount>
+	<dateSigned>2015-10-14</dateSigned>
+	<company name="SBC" operations="loan" />
+	<company operations="banking" />
+	<type>
+		<accountType>passbook</accountType>
+	</type>
+
+	<address>
+		Makati
+		<street>Arnaiz</street>
+		<country>Philippines</country>
+	</address>
+</savings> 

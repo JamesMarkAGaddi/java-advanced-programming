@@ -1,0 +1,54 @@
+name=SBCLogConfig
+#this is your logger config sa log4j2
+#fefetch mo na lang tong .properties file
+
+#Appender - handler sa java.util.logging to
+appenders=consl, file, rollfile
+appender.consl.name=CONSL
+appender.consl.type=Console
+
+appender.file.name=FILE
+appender.file.type=File
+appender.file.fileName=src/files/math2.log
+
+appender.rollfile.name=ROLLFILE
+appender.rollfile.type=RollingFile
+appender.rollfile.fileName=src/files/mathroll.log
+appender.rollfile.filePattern=src/files/mathroll.log-%i
+appender.rollfile.policies.type=Policies
+appender.rollfile.policies.size.type=SizeBasedTriggeringPolicy
+appender.rollfile.policies.size.size=1KB
+appender.rollfile.strategy.type=DefaultRolloverStrategy
+appender.rollfile.strategy.max=10
+
+#Layout - formatter sa java.util.logging to
+appender.consl.layout.type=PatternLayout
+appender.consl.layout.pattern=%d{MMM dd, YYYY hh:mm:ss a} %C %M%n%p: %m%n
+
+appender.file.layout.type=PatternLayout
+appender.file.layout.pattern=%d{MMM dd, YYYY hh:mm:ss a} %C %M%n%p: %m%n
+
+appender.rollfile.layout.type=PatternLayout
+appender.rollfile.layout.pattern=%d{MMM dd, YYYY hh:mm:ss a} %C %M%n%p: %m%n
+
+#using many loggers
+#using logger1 for file
+loggers=logger1
+logger.logger1.name=LOGGER1
+logger.logger1.level=INFO
+#para di na sumali si root logger
+logger.logger1.additivity=false 
+logger.logger1.appenderRefs=file
+logger.logger1.appenderRef.file.ref=FILE
+
+loggers=logger2
+logger.logger2.name=LOGGER2
+logger.logger2.level=INFO
+#para di na sumali si root logger
+logger.logger2.additivity=false 
+logger.logger2.appenderRefs=rollfile
+logger.logger2.appenderRef.rollfile.ref=ROLLFILE
+
+rootLogger.level=INFO
+rootLogger.appenderRefs=consl
+rootLogger.appenderRef.consl.ref=CONSL

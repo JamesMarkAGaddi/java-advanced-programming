@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<savingss xmlns="http://www.sbc.com/savingss"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sbc.com/savingss savingss.xsd">
+
+	<accountId branch="Makati"></accountId>
+	<accountName>Joiuytrewqasdfghjk</accountName>
+	<amount>2000.007</amount>
+	<age>99</age>
+	<dateOpened>2020-12-20</dateOpened>
+</savingss> 

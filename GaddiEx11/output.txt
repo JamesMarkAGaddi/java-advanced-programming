@@ -1,0 +1,10 @@
+Hello, from thread!
+Hello, from thread!
+Hello, from thread!
+Hello, from thread!
+Hello, from thread!
+Hello, from thread!
+Hello, from thread!
+Hello, from thread!
+Hello, from thread!
+Hello, from thread!

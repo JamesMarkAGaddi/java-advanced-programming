@@ -1,0 +1,18 @@
+{
+	"_comment": "you need this to make a jsone file",
+	"_comment1": "below are simple contents",
+	
+	"id": 101, 
+	"firstname": "Juan",
+	"lastname": "Luna",
+	"salary": 50000.00,
+	"isRegular": true,
+	"employers": [
+		"DOST",
+		"SBC"
+	],
+	"position": {
+		"@classification": "managerial"
+	},
+	"civil_status": null
+}

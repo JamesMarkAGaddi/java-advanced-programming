@@ -1,0 +1,9 @@
+INFO - 2024-10-17 09:47:27,507 - TestSimpleApp.java - Start of testApp()
+INFO - 2024-10-17 09:47:27,515 - SimpleApp.java - Here's One!
+INFO - 2024-10-17 09:47:27,522 - TestSimpleApp.java - End of testApp()
+INFO - 2024-10-17 10:45:06,379 - TestSimpleApp.java - Start of testApp()
+INFO - 2024-10-17 10:45:06,381 - SimpleApp.java - Here's One!
+INFO - 2024-10-17 10:45:06,382 - TestSimpleApp.java - End of testApp()
+INFO - 2024-10-17 15:53:44,691 - TestSimpleApp.java - Start of testApp()
+INFO - 2024-10-17 15:53:44,692 - SimpleApp.java - Here's One!
+INFO - 2024-10-17 15:53:44,693 - TestSimpleApp.java - End of testApp()

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-10-16T03:07:51.581761800Z</date>
+  <millis>1729048071581</millis>
+  <nanos>761800</nanos>
+  <sequence>0</sequence>
+  <logger>org.acumen.training.codes.Mathematics</logger>
+  <level>INFO</level>
+  <class>org.acumen.training.codes.Mathematics</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>start of add with params: 10 20</message>
+</record>
+<record>
+  <date>2024-10-16T03:07:51.609996800Z</date>
+  <millis>1729048071609</millis>
+  <nanos>996800</nanos>
+  <sequence>1</sequence>
+  <logger>org.acumen.training.codes.Mathematics</logger>
+  <level>INFO</level>
+  <class>org.acumen.training.codes.Mathematics</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The sum is 29</message>
+</record>
+<record>
+  <date>2024-10-16T03:07:51.611010900Z</date>
+  <millis>1729048071611</millis>
+  <nanos>10900</nanos>
+  <sequence>2</sequence>
+  <logger>org.acumen.training.codes.Mathematics</logger>
+  <level>WARNING</level>
+  <class>org.acumen.training.codes.Mathematics</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>used a deprecated Integer wrapping</message>
+</record>
+<record>
+  <date>2024-10-16T03:07:51.611010900Z</date>
+  <millis>1729048071611</millis>
+  <nanos>10900</nanos>
+  <sequence>3</sequence>
+  <logger>org.acumen.training.codes.Mathematics</logger>
+  <level>INFO</level>
+  <class>org.acumen.training.codes.Mathematics</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>end of add()</message>
+</record>
+</log>
+Oct 16, 2024 11:15:41 AM org.acumen.training.codes.Mathematics add
+INFO: start of add with params: 10 20
+Oct 16, 2024 11:15:41 AM org.acumen.training.codes.Mathematics add
+INFO: The sum is 29
+Oct 16, 2024 11:15:41 AM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping
+Oct 16, 2024 11:15:41 AM org.acumen.training.codes.Mathematics add
+INFO: end of add()
+Oct 16, 2024 11:15:41 AM org.acumen.training.codes.Mathematics add
+INFO: start of add with params: 10 20
+Oct 16, 2024 11:15:41 AM org.acumen.training.codes.Mathematics add
+INFO: The sum is 29
+Oct 16, 2024 11:15:41 AM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping
+Oct 16, 2024 11:15:41 AM org.acumen.training.codes.Mathematics add
+INFO: end of add()
+Oct 16, 2024 11:16:07 AM org.acumen.training.codes.Mathematics add
+SEVERE: Negative x and y encountered 
+Oct 16, 2024 11:16:08 AM org.acumen.training.codes.Mathematics add
+SEVERE: Negative x and y encountered 
+Oct 16, 2024 11:16:53 AM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping
+Oct 16, 2024 11:16:53 AM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping
+Oct 16, 2024 1:17:29 PM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping
+Oct 16, 2024 1:17:29 PM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping
+Oct 16, 2024 1:57:30 PM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping
+Oct 16, 2024 1:57:30 PM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping
+Oct 16, 2024 2:27:16 PM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping
+Oct 16, 2024 2:27:17 PM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping
+Oct 16, 2024 2:28:32 PM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping
+Oct 16, 2024 2:28:32 PM org.acumen.training.codes.Mathematics add
+WARNING: used a deprecated Integer wrapping

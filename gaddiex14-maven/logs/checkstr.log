@@ -1,0 +1,60 @@
+2024/10/17 17:10:58,394 [ INFO  ] ChekcStr – binarise() returned: 1100001
+2024/10/17 17:10:58,409 [ INFO  ] ChekcStr – Ending execution of binarise()
+2024/10/17 17:10:58,410 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,411 [ INFO  ] ChekcStr – Starting execution of binarise() with input: 97
+2024/10/17 17:10:58,411 [ INFO  ] ChekcStr – binarise() returned: 1100001
+2024/10/17 17:10:58,411 [ INFO  ] ChekcStr – Ending execution of binarise()
+2024/10/17 17:10:58,412 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,412 [ INFO  ] ChekcStr – Starting execution of binarise() with input: 97
+2024/10/17 17:10:58,412 [ INFO  ] ChekcStr – binarise() returned: 1100001
+2024/10/17 17:10:58,413 [ INFO  ] ChekcStr – Ending execution of binarise()
+2024/10/17 17:10:58,414 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,414 [ INFO  ] ChekcStr – Starting execution of binarise() with input: 97
+2024/10/17 17:10:58,414 [ INFO  ] ChekcStr – binarise() returned: 1100001
+2024/10/17 17:10:58,414 [ INFO  ] ChekcStr – Ending execution of binarise()
+2024/10/17 17:10:58,415 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,415 [ INFO  ] ChekcStr – Starting execution of binarise() with input: 97
+2024/10/17 17:10:58,415 [ INFO  ] ChekcStr – binarise() returned: 1100001
+2024/10/17 17:10:58,415 [ INFO  ] ChekcStr – Ending execution of binarise()
+2024/10/17 17:10:58,416 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,417 [ INFO  ] ChekcStr – Starting execution of total() with input: 
+2024/10/17 17:10:58,417 [ INFO  ] ChekcStr – total() returned: 0
+2024/10/17 17:10:58,417 [ INFO  ] ChekcStr – Ending execution of total()
+2024/10/17 17:10:58,417 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,419 [ INFO  ] ChekcStr – Starting execution of convert() with input: 4
+2024/10/17 17:10:58,419 [ INFO  ] ChekcStr – Starting execution of total() with input: 4
+2024/10/17 17:10:58,419 [ INFO  ] ChekcStr – total() returned: 52
+2024/10/17 17:10:58,419 [ INFO  ] ChekcStr – Ending execution of total()
+2024/10/17 17:10:58,419 [ INFO  ] ChekcStr – Starting execution of binarise() with input: 52
+2024/10/17 17:10:58,419 [ INFO  ] ChekcStr – binarise() returned: 110100
+2024/10/17 17:10:58,419 [ INFO  ] ChekcStr – Ending execution of binarise()
+2024/10/17 17:10:58,419 [ INFO  ] ChekcStr – convert() returned: 110100
+2024/10/17 17:10:58,420 [ INFO  ] ChekcStr – Ending execution of convert()
+2024/10/17 17:10:58,453 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,453 [ INFO  ] ChekcStr – Starting execution of binarise() with input: -1
+2024/10/17 17:10:58,454 [ INFO  ] ChekcStr – binarise() returned: 
+2024/10/17 17:10:58,454 [ INFO  ] ChekcStr – Ending execution of binarise()
+2024/10/17 17:10:58,456 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,456 [ INFO  ] ChekcStr – Starting execution of total() with input: 123
+2024/10/17 17:10:58,456 [ INFO  ] ChekcStr – Starting execution of total() with input: 23
+2024/10/17 17:10:58,456 [ INFO  ] ChekcStr – Starting execution of total() with input: 3
+2024/10/17 17:10:58,456 [ INFO  ] ChekcStr – total() returned: 51
+2024/10/17 17:10:58,456 [ INFO  ] ChekcStr – Ending execution of total()
+2024/10/17 17:10:58,456 [ INFO  ] ChekcStr – total() returned: 101
+2024/10/17 17:10:58,456 [ INFO  ] ChekcStr – Ending execution of total()
+2024/10/17 17:10:58,456 [ INFO  ] ChekcStr – total() returned: 150
+2024/10/17 17:10:58,456 [ INFO  ] ChekcStr – Ending execution of total()
+2024/10/17 17:10:58,458 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,458 [ INFO  ] ChekcStr – Starting execution of binarise() with input: 15
+2024/10/17 17:10:58,458 [ INFO  ] ChekcStr – binarise() returned: 1111
+2024/10/17 17:10:58,458 [ INFO  ] ChekcStr – Ending execution of binarise()
+2024/10/17 17:10:58,459 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,459 [ INFO  ] ChekcStr – Starting execution of binarise() with input: 5
+2024/10/17 17:10:58,459 [ INFO  ] ChekcStr – binarise() returned: 101
+2024/10/17 17:10:58,459 [ INFO  ] ChekcStr – Ending execution of binarise()
+2024/10/17 17:10:58,461 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,461 [ INFO  ] ChekcStr – Starting execution of binarise() with input: 0
+2024/10/17 17:10:58,462 [ INFO  ] ChekcStr – binarise() returned base case: 0
+2024/10/17 17:10:58,462 [ INFO  ] ChekcStr – ChekcStr instantiated
+2024/10/17 17:10:58,463 [ INFO  ] ChekcStr – Starting execution of convert() with input: 
+2024/10/17 17:10:58,463 [ ERROR ] ChekcStr – Invalid input provided: null or empty string

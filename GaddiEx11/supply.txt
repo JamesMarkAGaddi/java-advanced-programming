@@ -1,0 +1,6 @@
+Supply[productId=PO788-1, unitPrice=56.0, supply=78999, supplier=Johnson and Johnson, contact=Jimmy Yu]
+Supply[productId=WER23-9, unitPrice=78.23, supply=456, supplier=ACG Mfg., contact=Edward Lao]
+Supply[productId=TYTF23-0, unitPrice=98.5, supply=767567, supplier=YKLMN Mfg., contact=Cathy Koo]
+Supply[productId=G009G-1, unitPrice=23.7, supply=454, supplier=Toyota, contact=Gary]
+Supply[productId=IOP890-2, unitPrice=56.3, supply=34, supplier=Honda, contact=Nathan Welsh]
+Supply[productId=BHN987-3, unitPrice=21.2, supply=367, supplier=Wiley and Sons, contact=Joey Dim]

@@ -1,0 +1,7 @@
+<employee>
+  <id>101</id>
+  <firstname>James</firstname>
+  <lastname>Mark</lastname>
+  <salary>55000.0</salary>
+  <birthday>2001-10-15</birthday>
+</employee>

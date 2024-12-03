@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<employees>
+	<employee status="probationary" gender="male">
+		<id branch="QC">101</id>
+		<firstname>Juan</firstname>
+		<lastname>Luna</lastname>
+		<salary>50000.00</salary>
+	</employee>
+
+	<employee status="regular" gender="female">
+		<id branch="Calamba">102</id>
+		<firstname>Maria</firstname>
+		<lastname>Clara</lastname>
+		<salary>60000.00</salary>
+	</employee>
+
+</employees> 

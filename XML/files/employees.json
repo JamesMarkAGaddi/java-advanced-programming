@@ -1,0 +1,28 @@
+{
+	  "employees": {
+		          "employee": [
+			{
+				"@status": "probationary",
+				                "@gender": "male",
+				                "id": {
+					"@branch": "QC",
+					"#text": 101
+				},
+				                "firstname": "Juan",
+				                "lastname": "Luna",
+				                "salary": 50000.00
+			},
+			                {
+				"@status": "regular",
+				                "@gender": "female",
+				                "id": {
+					"@branch": "Calamba",
+					"#text": 102
+				},
+				                "firstname": "Maria",
+				                "lastname": "Clara",
+				                "salary": 60000.00                
+			}
+		]        
+	}
+}

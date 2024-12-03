@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration name="GaddiEx14LogConfig">
+	<Appenders>
+		<Console name="CONSL" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%p - %d{yyyy-MM-dd HH:mm:ss,SSS} - %logger{1}.java - %m%n" />
+		</Console>
+
+		<File name="FILE" fileName="logs/simpleapp.log">
+			<PatternLayout
+				pattern="%p - %d{yyyy-MM-dd HH:mm:ss,SSS} - %logger{1}.java - %m%n" />
+		</File>
+
+		<RollingFile name="ROLLINGFILE"
+			fileName="logs/traparray.log"
+			filePattern="logs/traparray-%d{yyyy-MM-dd}-%i.log">
+			<PatternLayout pattern="%p : %m%n" />
+			<TimeBasedTriggeringPolicy interval="1"
+				modulate="true" />
+			<DefaultRolloverStrategy max="10" />
+		</RollingFile>
+
+		<RollingFile name="ROLLINGFILE2"
+			fileName="logs/checkstr.log" filePattern="logs/checkstr-%i.log">
+			<PatternLayout
+				pattern="%d{yyyy/MM/dd HH:mm:ss,SSS} [ %-5level ] %c{1} – %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10KB" />
+			</Policies>
+			<DefaultRolloverStrategy max="10" />
+		</RollingFile>
+
+		<File name="HTML" fileName="logs/vendolog.html" append="false">
+			<HTMLLayout charset="UTF-8" title="Vending Machine Logs"
+				locationInfo="false">
+			</HTMLLayout>
+		</File>
+	</Appenders>
+
+	<Loggers>
+		<Logger name="SimpleApp" level="INFO" additivity="false">
+			<AppenderRef ref="FILE" />
+		</Logger>
+
+		<Logger name="TestSimpleApp" level="INFO" additivity="false">
+			<AppenderRef ref="FILE" />
+		</Logger>
+
+		<Logger name="TrapArray" level="INFO" additivity="false">
+			<AppenderRef ref="ROLLINGFILE" />
+		</Logger>
+
+		<Logger name="ChekcStr" level="INFO" additivity="false">
+			<AppenderRef ref="ROLLINGFILE2" />
+		</Logger>
+
+		<Logger name="VendingMachine" level="DEBUG" additivity="false">
+			<AppenderRef ref="HTML" />
+		</Logger>
+
+		<Root level="INFO">
+			<AppenderRef ref="CONSL" />
+		</Root>
+	</Loggers>
+</Configuration>

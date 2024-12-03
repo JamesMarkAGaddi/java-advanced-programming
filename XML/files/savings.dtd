@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT savings (accountId | accountName | amount |  dateSigned |  company | bank |  type |  address?)*>
+
+<!-- SIMPLE ELEMENTS rule -->
+<!ELEMENT accountId (#PCDATA)>
+<!ELEMENT accountName (#PCDATA)>
+<!ELEMENT amount (#PCDATA)>
+<!ELEMENT dateSigned (#PCDATA)>
+
+<!-- EMPTY ELEMENTS rule -->
+<!ELEMENT company EMPTY>
+<!ELEMENT bank EMPTY>
+
+<!-- ELEMENTS WITH SUB ELEMENTS rule -->
+<!ELEMENT type (accountType)>
+<!ELEMENT accountType (#PCDATA)>
+
+<!-- MIXED ELEMENTS rule -->
+<!ELEMENT address (#PCDATA | street | country)*>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+
+<!-- COMPLEX ELEMENTS rule -->
+<!ELEMENT occurence (#PCDATA)*> <!-- zero or more times usage -->
+
+<!-- ATTRIBUTE DECLARATION -->
+<!ATTLIST company name CDATA "">
+<!ATTLIST company operations CDATA #REQUIRED>
+
+<!ATTLIST accountId branch CDATA #FIXED "Quezon City">
+<!ATTLIST accountId scope CDATA #IMPLIED>
+
+<!ATTLIST accountName role (PRIMARY|SECONDARY) "PRIMARY">
+<!ATTLIST accountName position (CEO|PRES) "PRES">
+
+
